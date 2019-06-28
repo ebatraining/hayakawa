@@ -1,0 +1,873 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-image: url("../img/common/back_main.jpg");
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+    border-style:none;
+}
+/*フォントサイズ*/
+@media screen and (min-width:768px) and (max-width:1100px){
+
+html{
+font-size:1.4vw;
+}
+
+}
+
+@media screen and (min-width:1101px) and (max-width:1300px){
+
+html{
+font-size:1.3vw;
+}
+
+}
+
+@media screen and (min-width:1301px) and (max-width:1500px){
+
+html{
+font-size:1.2vw;
+}
+
+}
+
+@media screen and (min-width:1501px) and (max-width:1800px){
+
+html{
+font-size:1.1vw;
+}
+
+}
+
+@media screen and (min-width:1801px){
+
+html{
+font-size:1vw;
+}
+
+}
+
+
+
+
+
+
+
+/*sp用画像非表示*/
+#top-head .logo_sp,
+.facebook_ie7sp,
+.reserve-btn_sp,
+.start_sp-img,
+.last_sp-img,
+.recruit-comment_sp {
+  display: none;
+}
+
+
+
+
+/*ヘッダー部分*/
+.inner {
+  width: 100%;
+  margin: 0 auto;
+}
+.inner:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#top-head {
+    top: -100px;
+    position: absolute;
+    width: 100%;
+    margin: 100px auto 0;
+    padding: 20px 0 20px 20px;
+    line-height: 1;
+    z-index: 999;
+    background-image: url("../img/common/back_main.jpg");
+}
+#top-head a,
+#top-head {
+    text-decoration: none;
+}
+
+#top-head .inner {
+    position: relative;
+}
+#top-head .logo {
+  width: 13%;
+  float: left;
+  margin-top: -1.5%;
+}
+#global-nav ul {
+    list-style: none;
+    font-size: 100%;
+    margin-left: 15%;
+
+}
+#global-nav ul li {
+    float: left;
+    border-right: 1px solid #151515;
+    padding: 0.5% 2%;
+}
+
+#global-nav ul li:last-child{
+  border-right: none;
+}
+
+#global-nav ul li a {
+    color: #151515;
+    display: inline-block;
+    position: relative;
+}
+
+
+#global-nav ul li a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+
+
+#global-nav ul li a:hover::after {
+  transform: scale(1, 1);
+}
+
+
+/* Fixed */
+#top-head.fixed {
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    padding-top: 10px;
+    height: 84px;
+    background: #fff;
+    background: rgba(255,255,255,.7);
+    transition: top 0.65s ease-in;
+    -webkit-transition: top 0.65s ease-in;
+    -moz-transition: top 0.65s ease-in;
+}
+
+
+/* Toggle Button */
+#nav-toggle {
+    display: none;
+}
+#nav-toggle div {
+    position: relative;
+}
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #666;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+#nav-toggle span:nth-child(2) {
+    top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 22px;
+}
+
+.fb {
+  display: inline;
+  padding-left: 0%;
+  float: left;
+  transition: 0.7s;
+  width: 8%;
+}
+
+.fb:hover {
+  opacity: 0.7;
+}
+
+
+
+.reserve {
+  text-align: center;
+  margin-top: -1%;
+  margin-right: 2%;
+  float: right;
+  width: 17%;
+}
+
+.reserve-btn {
+  white-space: nowrap;
+  display: inline-block;
+  width: 90%;
+  padding:10% 5%;
+  text-decoration: none;
+  background-image: url("../img/common/back_red.jpg");
+  box-shadow:1px 1px 3px 0.5px #424242;
+  color: #FFF;
+  border-radius: 3px;
+  transition: 0.7s;
+  font-size: 85%;
+}
+
+.reserve :hover{
+  box-shadow:1px 1px 3px 0.5px #424242 inset;
+}
+
+
+/*メイン*/
+main {
+  width: 100%;
+}
+
+
+/*トップ*/
+.top {
+  position: relative;
+}
+
+.top-img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.top-logo {
+  width: 12%;
+  position: absolute;
+  top: 36%;
+  left: 45%;
+
+}
+
+
+.top-info {
+  background-image: url("../img/common/back_red.jpg");
+  margin-top: 0;
+  color: #fff;
+  text-align: center;
+  padding: 2%;
+}
+
+
+/*イントロ*/
+h1 {
+  font-size: 400%;
+  text-align: center;
+}
+
+.intro01,
+.intro02 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.intro01 img {
+  float: left;
+  width: 50%;
+}
+
+.intro02 img {
+  float: right;
+  width: 50%;
+}
+
+.sentence {
+  display: block;
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+}
+
+.sentence-head {
+  font-size: 200%;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.sentence-head span {
+  font-size: 80%;
+}
+
+
+/*２階貸切*/
+.floorparty {
+  background-image: url("../img/common/back_black.jpg");
+  box-shadow:0 5px 10px 2px #424242;
+    -webkit-transform: skew(0,3deg);
+    -moz-transform: skew(0,3deg);
+}
+
+.floorparty p {
+  color: #fff;
+}
+
+.floorparty-inner {
+  margin: 5% 0;
+  padding: 6% 0 10%;
+  -webkit-transform: skew(0,-3deg);
+  -moz-transform: skew(0,-3deg);
+}
+
+.floorparty-images {
+  position: relative;
+}
+
+.title-img {
+  display: block;
+  margin: auto;
+}
+
+.start-img {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+
+}
+
+.num-img {
+  position: absolute;
+  top: 36%;
+  left: 6%;
+  width: 14%;
+}
+
+.tennai-img {
+  width: 12%;
+  position: absolute;
+  top:35%;
+  right: 10%;
+}
+
+.floorparty-meal {
+  width: 80%;
+  margin: auto;
+}
+
+.floorparty-meal-contents {
+  display: inline-block;
+  width: 29%;
+  margin: 0 1%;
+  vertical-align: top;
+}
+
+.floorparty-meal-contents p{
+  color: #FFBF00;
+  font-size: 200%;
+  border-bottom: 1px solid #FFF;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.floorparty-meal-contents li {
+  color: #fff;
+  padding-top: 2%;
+}
+
+.floorparty-drink {
+  width: 80%;
+  margin: 5% auto 2%;
+  font-size: 250%;
+  font-weight: bold;
+}
+
+.floorparty-drink p {
+  display: inline;
+  padding: 3%;
+}
+
+.floorparty-drink-contents {
+  width: 80%;
+  margin: 2% auto;
+  border: 1px solid #fff;
+  padding: 2% 1%;
+}
+
+.floorparty-drink-contents p{
+  font-size: 180%;
+  margin-left: 3%;
+}
+
+.floorparty-drink-contents li {
+  color: #fff;
+  display: inline-block;
+  width: 32%;
+  padding-top: 1%;
+}
+
+.last-img {
+  width: 100%;
+  margin: 3% 0;
+}
+
+.reserve2 {
+  text-align: center;
+  margin-top:3%;
+  transition: 0.7s;
+}
+
+.reserve-btn2 {
+  display: inline-block;
+  padding: 1%;
+  width: 25%;
+  font-size: 150%;
+  text-decoration: none;
+  background-image: url("../img/common/back_red.jpg");
+  color: #FFF;
+  border-radius: 3px;
+  box-shadow:1px 1px 3px 0.5px #000;
+}
+
+.reserve2 :hover{
+  box-shadow:1px 1px 3px 0.5px #424242 inset;
+}
+
+
+
+/*単品メニュー*/
+#menu {
+  text-align: center;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+.menu-link {
+  display: inline-block;
+  width: 10%;
+  margin: 0 10%;
+}
+
+.menu-link a {
+  color: #151515;
+  transition: 0.5s;
+}
+
+.menu-link a:hover{
+  opacity: 0.7;
+}
+
+
+
+h3 {
+  display: inline-block;
+  width: 100%;
+  margin: 3% 0;
+  font-size: 170%;
+}
+
+.yajirushi{
+  width: 30px;
+  height: 30px;
+  border: 2px solid;
+  border-color:  transparent transparent #565656 #565656;
+  transform: rotate(-45deg);
+  margin-top: -16px;
+  margin-left: 47%;
+}
+
+/*春のメニュー*/
+.s-menu-wrapper {
+  background-color: #efd8bb;
+  box-shadow:0 5px 10px 1px #6E6E6E;
+    -webkit-transform: skew(0,-3deg);
+    -moz-transform: skew(0,-3deg);
+}
+
+.s-menu-inner {
+  width: 80%;
+  margin: 5% auto;
+  padding: 6% 0 10%;
+  -webkit-transform: skew(0,3deg);
+  -moz-transform: skew(0,3deg);
+}
+
+h4 {
+  font-size: 160%;
+}
+
+.s-menu {
+  display: inline-block;
+  width: 32%;
+  vertical-align: top;
+}
+
+.s-menu img {
+  width: 100%;
+}
+
+.description {
+  font-size: 90%;
+  width:80%;
+  margin: auto;
+}
+
+.s-menu-kushi {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.s-menu-kushi td{
+  border-bottom: 1px solid #FFF;
+  padding: 1%;
+}
+
+
+/*グランドメニュー*/
+.g-menu-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.g-meal {
+  width: 100%;
+}
+
+.g-menu {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+}
+
+.g-menu img {
+  width: 100%;
+}
+
+.g-drink-menu {
+  width: 80%;
+  margin: 0 auto 10%;
+}
+
+.td-left {
+  border-bottom: 1px solid #FFF;
+  padding: 1%;
+  text-align: left;
+  width: 20%
+}
+
+.td-center {
+  border-bottom: 1px solid #FFF;
+  padding: 1%;
+  text-align: right;
+  width:70%;
+}
+
+.td-right {
+  border-bottom: 1px solid #FFF;
+  padding: 1%;
+  text-align: right;
+  width: 10%
+}
+
+
+/*コース*/
+.course-wrapper {
+  width: 80%;
+  margin: auto;
+  border-top: 1px solid #151515;
+}
+
+
+.course-img {
+  width: 100%;
+  background-image: url("../img/common/back_black.jpg");
+  margin: 2% 0 5%;
+  box-shadow:1px 1px 3px 0.5px #424242;
+  padding: 0 13.3%
+}
+
+.course-wrapper a{
+transition: 0.7s;
+}
+
+.course-wrapper a :hover{
+box-shadow:1px 1px 3px 0.5px #424242 inset;
+}
+
+
+.course-contents3500,
+.course-contents5000 {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  width: 47.5%;
+  height: 580px;
+  margin: 2% 2% 2% 0;
+  vertical-align: top;
+}
+
+.course-contents4000,
+.course-contents8000 {
+  display: inline-block;
+  background-color: #fff;
+  width: 47.5%;
+  height: 580px;
+  margin: 2% 0 2% 2%;
+  vertical-align: top;
+}
+
+.course-contents3500 img {
+  width: 25%;
+  position: absolute;
+  top: -2%;
+  left: -2%;
+}
+
+.course-contents {
+  width: 80%;
+  margin: auto;
+  font-size: 160%;
+  font-weight: bold;
+  text-align: center;
+  padding: 3% 0;
+}
+
+.comment {
+  color: #953234;
+  margin: 0;
+  font-size: 60%;
+  margin-left: 4%;
+}
+
+.course-contents-ul {
+  border-top: 1px solid #953234;
+  width: 80%;
+  margin: auto;
+  font-size: 100%;
+  line-height: 2;
+  padding: 2%;
+}
+
+.course-contents-ul li {
+  text-align: left;
+}
+
+.comment2 {
+  text-align: left;
+  margin-top: 0;
+}
+
+.course-about {
+  background-color: #fff;
+  padding: 2% 2% 2% 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.about1{
+  display: inline-block;
+  text-align: left;
+  width: 95%;
+  margin: auto;
+}
+
+.about1-2 {
+  font-size: 90%;
+  width: 95%;
+  text-align: left;
+  margin: auto;
+}
+
+.about2 {
+  font-size: 90%;
+  width: 95%;
+  text-align: left;
+  margin: auto;
+  margin-top: 2%;
+}
+
+
+/*店内レイアウト*/
+#layout {
+  background-image: url("../img/common/back_black.jpg");
+  padding: 5% 0 10%;
+}
+
+.layout-inner {
+  text-align: center;
+}
+
+.layout-inner h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.layout-inner p {
+  color: #fff;
+}
+
+.floornum {
+  font-size: 180%;
+}
+
+.layout2f img {
+  margin: 0 2%;
+}
+
+
+/*店舗情報*/
+.storeinfo-inner {
+  width: 80%;
+  margin:auto;
+}
+
+.storeinfo-inner h2 {
+  text-align: center;
+}
+
+.storeinfo-inner table {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+.storeinfo-inner td {
+  padding: 1%;
+}
+
+.ggmap {
+position: relative;
+padding-bottom: 32%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 80%;
+  height: 80%;
+  }
+
+
+/*求人案内*/
+.recruit-inner {
+  width: 100%;
+  display: inline-block;
+  background-image: url("../img/recruit/back.jpg");
+}
+
+.recruit-warrper {
+  background-color: #fff;
+  width: 80%;
+  margin: 2% auto;
+  padding: 3% auto;
+  text-align: center;
+}
+
+.recruit-warrper h2 {
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+
+.recruit-comment {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.recruit-warrper p {
+  padding-bottom: 5%;
+  text-align: center;
+  font-size: 180%;
+}
+
+.recruit-detail {
+  width: 90%;
+  margin: auto;
+}
+
+.recruit-tables {
+  display: inline-block;
+  width: 49%;
+  border-right: 1px solid #151515;
+  vertical-align: top;
+}
+
+.recruit-tables:last-child{
+  border-right: none;
+}
+
+.recruit-table {
+  width: 80%;
+  margin:2% auto;
+  text-align: center;
+}
+
+.recruit-table th {
+  padding: 2% 0;
+  font-size: 200%;
+  text-align: left;
+}
+
+.recruit-left {
+  width: 3%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.recruit-right {
+  width: 16%;
+  text-align: left;
+}
+
+
+
+/*ページトップ*/
+#pagetop img{
+  position: fixed;
+  right:0;
+  bottom:6%;
+  box-shadow:1px 1px 3px 0.5px #424242;
+}
+
+#pagetop a{
+  display: block;
+  transition: 0.5s;
+}
+
+#pagetop a:hover{
+  opacity: 0.7;
+}
+
+
+
+/*フッター*/
+.footer {
+  background-image: url("../img/common/back_black.jpg");
+  color: #fff;
+  text-align: center;
+  padding: 2% ;
+  margin-top: -2%;
+}
+
+.footer p{
+  margin-top: 3%;
+}

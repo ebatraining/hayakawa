@@ -1,0 +1,601 @@
+@media screen and (max-width:767px){
+
+
+body{
+  margin: 0;
+  background-image: url("../img/common/back_main.jpg");
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*sp用画像表示*/
+#top-head .logo_sp,
+.reserve-btn_sp,
+.start_sp-img,
+.last_sp-img,
+.recruit-comment_sp {
+  display: block;
+  width: 100%;
+}
+
+
+
+/*pc用画像非表示*/
+#top-head .logo,
+.facebook_ie7sp,
+.reserve-btn,
+.start-img,
+.last-img,
+.recruit-comment {
+  display: none;
+}
+
+
+
+/*ヘッダー部分*/
+#top-head,
+ .inner {
+     width: 100%;
+     padding: 1% 0;
+ }
+ #top-head {
+     top: 0;
+     position: absolute;
+     margin-top: 0;
+     background-image: url("../img/common/back_main.jpg");
+ }
+ /* Fixed reset */
+ #top-head.fixed {
+     padding-top: 1%;;
+     background: transparent;
+     background: rgba(255,255,255,.7);
+     height: 54px;
+ }
+ #mobile-head {
+     width: 100%;
+     height: 5px;
+     z-index: 999;
+     position: relative;
+ }
+ #top-head.fixed .logo_sp,
+ #top-head .logo_sp {
+     width: 200px;
+     position: absolute;
+     left: 20%;
+     top: 5px;
+     color: #333;
+     font-size: 26px;
+ }
+ #global-nav {
+     position: absolute;
+     /* 開いてないときは画面外に配置 */
+     top: -500px;
+     background: #333;
+     width: 100%;
+     text-align: center;
+     padding: 10px 0;
+     -webkit-transition: .5s ease-in-out;
+     -moz-transition: .5s ease-in-out;
+     transition: .5s ease-in-out;
+ }
+ #global-nav ul {
+     list-style: none;
+     position: static;
+     left: 0;
+     bottom: 0;
+     font-size: 14px;
+      margin-left: 0;
+ }
+ #global-nav ul li {
+     float: none;
+     position: static;
+ }
+ #top-head #global-nav ul li a,
+ #top-head.fixed #global-nav ul li a {
+     width: 100%;
+     display: block;
+     color: #fff;
+     padding: 18px 0;
+
+ }
+ #nav-toggle {
+     display: block;
+     position: absolute;
+     left:10px;
+     top: 5px;
+     width: 34px;
+     height: 36px;
+     cursor: pointer;
+     z-index: 101;
+ }
+ /* #nav-toggle 切り替えアニメーション */
+ .open #nav-toggle span:nth-child(1) {
+     top: 11px;
+     -webkit-transform: rotate(315deg);
+     -moz-transform: rotate(315deg);
+     transform: rotate(315deg);
+ }
+ .open #nav-toggle span:nth-child(2) {
+     width: 0;
+     left: 50%;
+ }
+ .open #nav-toggle span:nth-child(3) {
+     top: 11px;
+     -webkit-transform: rotate(-315deg);
+     -moz-transform: rotate(-315deg);
+     transform: rotate(-315deg);
+ }
+ /* #global-nav スライドアニメーション */
+ .open #global-nav {
+     /* #global-nav top + #mobile-head height */
+     -moz-transform: translateY(556px);
+     -webkit-transform: translateY(556px);
+     transform: translateY(556px);
+ }
+
+ .fb {
+   display: inline;
+   text-align: center;
+   float: none;
+ }
+
+.reserve {
+  text-align: center;
+  margin-right: 2%;
+  float: right;
+  width: 15%;
+}
+
+.reserve-btn_sp {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  background-image: url("../img/common/back_red.jpg");
+  box-shadow:1px 1px 3px 0.5px #424242;
+  color: #FFF;
+  border-radius: 3px;
+  padding:10% 5%;
+}
+
+
+/*メイン*/
+main {
+  width: 100%;
+}
+
+/*トップ*/
+.top-info {
+  text-align: left;
+  padding: 2% 7%;
+  font-size: 80%
+}
+
+
+/*イントロ*/
+h1 {
+  font-size: 170%;
+}
+
+.intro01,
+.intro02 {
+  width: 100%;
+}
+
+.intro01 img {
+  width: 100%;
+}
+
+.intro02 img {
+  width: 100%;
+}
+
+.sentence {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.sentence-head {
+  font-size: 160%;
+  margin-top: 2%;
+}
+
+.sentence-head span {
+  font-size: 80%;
+}
+
+
+/*２階貸切*/
+.floorparty-inner {
+  margin: 5% 0;
+}
+
+.title-img {
+  width: 66%;
+  margin: 2% 6% 0 auto;
+}
+
+.start_sp-img {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.num-img {
+  position: absolute;
+  width: 17%;
+  top: -14%;
+  left: 7%;
+}
+
+.tennai-img {
+  display: none;
+}
+
+.floorparty-meal {
+  width: 95%;
+  margin: auto;
+}
+
+.floorparty-meal-contents {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.floorparty-meal-contents ul {
+  padding: 0 0 0 4%;
+}
+
+
+.floorparty-meal-contents li {
+ font-size: 90%;
+ width: 70%;
+ margin: auto;
+ padding: 1%;
+}
+
+.floorparty-drink {
+  margin: 2% auto 1%;
+  font-size: 120%;
+  text-align: center;
+}
+
+.floorparty-drink p {
+  display: inline-block;
+  padding: 2%;
+  margin: 0;
+}
+
+.floorparty-drink-contents {
+  width: 80%;
+  margin: 2% auto;
+  padding: 2% 1%;
+}
+
+.floorparty-drink-contents p{
+  font-size: 110%;
+  text-align: center;
+}
+
+.floorparty-drink-contents ul {
+  padding: 0 10%;
+}
+
+.floorparty-drink-contents li {
+  width: 48%;
+  padding-top: 1%;
+  font-size: 90%;
+}
+
+.last-img {
+  width: 100%;
+  margin: 3% 0;
+}
+
+.reserve2 {
+  margin-top: 5%;
+}
+
+.reserve-btn2 {
+  width: 78%;
+  font-size: 150%;
+}
+
+
+/*単品メニュー*/
+#menu {
+  text-align: center;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+.menu-link {
+  width: 48%;
+  margin: auto;
+}
+
+h3 {
+  width: 100%;
+  margin: 3% 0;
+  font-size: 130%;
+}
+
+.yajirushi{
+  margin-left: 43%;
+}
+
+/*春のメニュー*/
+.s-menu-inner {
+  width: 90%;
+  margin: 7% auto;
+}
+
+h4 {
+  margin-top: 2%;
+}
+
+.s-menu {
+  width: 80%;
+}
+
+.menu {
+  margin-top: 0;
+  margin-bottom: 2%;
+  font-size: 90%;
+}
+
+.description {
+  font-size: 80%;
+  width:80%;
+  margin: 0 auto 10%;
+}
+
+.s-menu-kushi {
+  width: 100%;
+}
+
+.s-menu-kushi td{
+  font-size: 80%;
+}
+
+
+/*グランドメニュー*/
+.g-menu-wrapper {
+  width: 90%;
+}
+
+.g-meal {
+  width: 100%;
+}
+
+.g-menu {
+  width: 48%;
+}
+
+.g-menu img {
+  width: 100%;
+}
+
+.g-drink-menu {
+  width: 100%;
+}
+
+.td-left {
+  font-size: 90%;
+  width: 30%
+}
+
+.td-center {
+  font-size: 90%;
+  width:50%;
+}
+
+.td-right {
+  font-size: 90%;
+  width: 20%
+}
+
+
+/*コース*/
+.course-wrapper {
+  width: 90%;
+}
+
+
+.course-img {
+  width: 100%;
+}
+
+.floorparty-meal {
+  width: 95%;
+  margin: auto;
+}
+
+.course-contents3500,
+.course-contents4000,
+.course-contents5000 {
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin: 4% 0;
+}
+
+.course-contents8000 {
+  width: 100%;
+  height: 480px;
+  margin: 1% 0;
+}
+
+.course-contents {
+  width: 100%;
+  font-size: 140%;
+}
+
+.comment {
+  font-size: 60%;
+  margin-left: 4%;
+}
+
+.course-contents-ul {
+  width: 90%;
+  margin: auto;
+}
+
+.course-contents-ul li {
+  font-size: 80%;
+}
+
+.comment2 {
+  text-align: center;
+  font-size: 90%;
+}
+
+.about1{
+  text-align: left;
+  width: 100%;
+  font-size: 96%;
+}
+
+.about1-2 {
+  font-size: 80%;
+  width: 95%;
+}
+
+.about2 {
+  font-size: 80%;
+  width: 95%;
+  text-align: left;
+  margin: auto;
+  margin-top: 2%;
+}
+
+
+/*店内レイアウト*/
+.layout {
+  padding: 1% 0 10%;
+}
+
+.layout-inner p {
+  margin: 2% auto;
+}
+
+.floornum {
+  font-size: 120%;
+  margin: 0;
+}
+
+.layout-inner img {
+  width: 90%;
+  margin: 0 2%;
+}
+
+
+/*店舗情報*/
+.storeinfo-inner {
+  width: 90%;
+  margin:auto;
+  padding-bottom: 10%
+}
+
+.storeinfo-inner table {
+  width: 100%;
+  float: none;
+  margin-top: 3%;
+  margin-left: 0;
+}
+
+.storeinfo-inner td {
+  padding: 1%;
+  vertical-align: top;
+}
+
+.ggmap {
+position: relative;
+padding-bottom: 70%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+
+
+/*求人案内*/
+.recruit-warrper {
+  top: 5%;
+  left: 5%;
+  width: 90%;
+}
+
+.recruit-comment_sp {
+  width: 100%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.recruit-warrper p {
+  font-size: 180%;
+}
+
+.recruit-detail {
+  width: 90%;
+  margin: auto;
+}
+
+.recruit-tables {
+  width: 100%;
+  border-top: 1px solid #151515;
+}
+
+.recruit-tables:first-child{
+  border-right: none;
+  border-top: none;
+}
+
+.recruit-table {
+  width: 80%;
+  margin:2% auto;
+  text-align: center;
+}
+
+.recruit-table th {
+  text-align: center;
+  font-size: 140%;
+}
+
+.recruit-left {
+  width: 3%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.recruit-right {
+  width: 16%;
+  text-align: left;
+}
+
+
+
+/*ページトップ*/
+
+/*フッター*/
+.footer {
+  margin: -6% 0 0 0;
+}
+
+
+}

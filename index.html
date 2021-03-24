@@ -7,19 +7,26 @@
   <meta name="description" content="自社農園と産地直送の野菜と自慢の創作串揚げ">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
+  <!--<link rel="stylesheet" href="./css/reset.css">-->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/sp.css">
   <link rel="stylesheet" href="./css/animate.css">
+
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css" >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!--くるくる-->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!--もーでる-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 
 <!--[if lt IE 9]>
 <link href="./css/style_ie7.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="./js/css3-mediaqueries.js"></script>
 <![endif]-->
-
-
-
 
 <!-- fedeinaアニメ -->
 <script>
@@ -198,18 +205,25 @@ $(window).scroll(function (){
         <a class="facebook_ie7sp" href="https://www.facebook.com/%E5%89%B5%E4%BD%9C%E4%B8%B2%E6%8F%9A%E3%81%92%E3%81%A8%E9%87%8E%E8%8F%9C-%E3%81%AF%E3%82%84%E3%81%8B%E3%82%8F-728151997348769/" target="_blank">
           <img class="fb" src="img/header/fb.png"></a>
         <div class="reserve">
-          <a class="reserve-btn" <a href="https://ws.formzu.net/fgen/S85014429/">ご予約・お問い合わせ</a>
-          <a class="reserve-btn_sp" <a href="https://ws.formzu.net/fgen/S85014429/">ご予約</a>
+          <a class="reserve-btn" a href="https://ws.formzu.net/fgen/S85014429/">ご予約・お問い合わせ</a>
+          <a class="reserve-btn_sp" a href="https://ws.formzu.net/fgen/S85014429/">ご予約</a>
         </div>
     </div>
-
-
   </header>
 
   <main>
     <div class="top">
-      <img class="top-img" src="img/top/main.jpg" alt="maintop">
-      <img class="top-logo" src="img/top/logo.png" alt="mainlogo">
+            <div class="single-item">
+            <img class="top-img" src="img/top/main.jpg" alt="maintop">
+            <img class="top-img" src="img/top/main2.jpg" alt="maintop">
+            <img class="top-img" src="img/top/main3.jpg" alt="maintop">
+            </div>
+    <img class="top-logo" src="img/top/logo.png" alt="mainlogo">
+
+<!-- slick jsの読込み -->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
       <p class="top-info">※不定休の為、予約が入っていない平日をお休みにする場合がございます</p>
     </div>
     <div class="intro">
@@ -313,7 +327,7 @@ $(window).scroll(function (){
         <img id="animation12" class="last-img" src="img/party/last.jpg" alt="ご予約はお早めに">
         <img class="last_sp-img" src="img/party/last_sp.png" alt="ご予約はお早めに">
         <div class="reserve2">
-          <a class="reserve-btn2" <a href="https://ws.formzu.net/fgen/S85014429/">ご予約・お問い合わせ</a>
+          <a class="reserve-btn2" a href="https://ws.formzu.net/fgen/S85014429/">ご予約・お問い合わせ</a>
         </div>
       </div>
     </div>
@@ -336,17 +350,22 @@ $(window).scroll(function (){
           <h4>春限定逸品</h4>
             <div id="animation13">
               <div class="s-menu">
-                <img src="img/menu/s-menu1.jpg" alt="春野菜の蒸籠蒸し">
+                <a href="img/menu/s-menu1.jpg" data-lightbox="1" deta-title="春野菜の蒸籠蒸し">
+                    <img src="img/menu/s-menu1.jpg" alt="春野菜の蒸籠蒸し"></a>
                 <p class="menu">春野菜の蒸籠蒸し 900円</p>
                 <p class="description">春のお野菜をふんだんに使用したカラフルな蒸籠蒸し！白ワインのシャブリを使用したソースとお塩でどうぞ</p>
               </div>
+
               <div class="s-menu">
-                <img src="img/menu/s-menu2.jpg" alt="天然鰆の焼霜カルパッチョ">
+                <a href="img/menu/s-menu2.jpg" data-lightbox="2" deta-title="天然鰆の焼霜カルパッチョ">
+                    <img src="img/menu/s-menu2.jpg" alt="天然鰆の焼霜カルパッチョ"></a>
                 <p class="menu">天然鰆の焼霜カルパッチョ　1,200円</p>
                 <p class="description">天然の鰆を軽く皮目を炙り芳ばしくし、自家製の梅の泡ソースと野菜ソムリエのおすすめの野菜と一緒に！</p>
               </div>
+
               <div class="s-menu">
-                <img src="img/menu/s-menu3.jpg" alt="畑のバーニャカウダ">
+                <a href="img/menu/s-menu3.jpg" data-lightbox="3" deta-title="畑のバーニャカウダ">
+                    <img src="img/menu/s-menu3.jpg" alt="畑のバーニャカウダ"></a>
                 <p class="menu">畑のバーニャカウダ　1,200円</p>
                 <p class="description">
               インスタ映え最高です。約15種類の旬の野菜を中心に珍しい野菜や豊橋クレアやフルーツトマトの「美」などを！ソースは自慢のハニーマスタードで！</p>
@@ -387,27 +406,33 @@ $(window).scroll(function (){
         <div class="g-meal">
           <h4>お料理</h4>
             <div class="g-menu">
-              <img src="img/menu/g-menu1.jpg" alt="春野菜の蒸籠蒸し">
+              <a href="img/menu/g-menu1.jpg" data-lightbox="4" deta-title="春野菜の蒸籠蒸し">
+              <img src="img/menu/g-menu1.jpg" alt="春野菜の蒸籠蒸し"></a>
               <p class="menu">天国に近い海 天使の海老　320円</p>
             </div>
             <div class="g-menu">
-              <img src="img/menu/g-menu2.jpg" alt="天然鰆の焼霜カルパッチョ">
+              <a href="img/menu/g-menu2.jpg" data-lightbox="5" deta-title="天然鰆の焼霜カルパッチョ">
+              <img src="img/menu/g-menu2.jpg" alt="天然鰆の焼霜カルパッチョ"></a>
               <p class="menu">マグロとアボカドの茎わさび和え　800円</p>
             </div>
             <div class="g-menu">
-              <img src="img/menu/g-menu3.jpg" alt="畑のバーニャカウダ">
+                <a href="img/menu/g-menu3.jpg" data-lightbox="6" deta-title="畑のバーニャカウダ">
+              <img src="img/menu/g-menu3.jpg" alt="畑のバーニャカウダ"></a>
               <p class="menu">季節創作串揚げ5本セット　990円</p>
             </div>
             <div class="g-menu">
-              <img src="img/menu/g-menu4.jpg" alt="春野菜の蒸籠蒸し">
+                <a href="img/menu/g-menu4.jpg" data-lightbox="7" deta-title="春野菜の蒸籠蒸し">
+              <img src="img/menu/g-menu4.jpg" alt="春野菜の蒸籠蒸し"></a>
               <p class="menu">サーモンとこぼれ北海いくら 480円</p>
             </div>
             <div class="g-menu">
-              <img src="img/menu/g-menu5.jpg" alt="天然鰆の焼霜カルパッチョ">
+                <a href="img/menu/g-menu5.jpg" data-lightbox="8" deta-title="天然鰆の焼霜カルパッチョ">
+              <img src="img/menu/g-menu5.jpg" alt="天然鰆の焼霜カルパッチョ"></a>
               <p class="menu">黒毛和牛フィレ肉　480円</p>
             </div>
             <div class="g-menu">
-              <img src="img/menu/g-menu6.jpg" alt="畑のバーニャカウダ">
+                <a href="img/menu/g-menu5.jpg" data-lightbox="9" deta-title="畑のバーニャカウダ">
+              <img src="img/menu/g-menu6.jpg" alt="畑のバーニャカウダ"></a>
               <p class="menu">ニューカレドニア産　天使の海老　320円</p>
             </div>
           </div>
@@ -650,6 +675,7 @@ $(window).scroll(function (){
               </div>
             </div>
             <p>お気軽にお電話ください</p>
+            <a class="btn" href="tel:0532-52-0151">TEL 0532-52-0151</a>
         </div>
       </div>
     </div>
@@ -660,5 +686,24 @@ $(window).scroll(function (){
   <div class="footer">
     <p>&copy; 2017 創作串揚げと野菜　はやかわ</p>
   </div>
+
+<!-- slickの設定 -->
+<script type="text/javascript">
+	$(function() {
+    $('.single-item').slick({
+        accessibility: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 400
+    });
+  });
+</script>
+<!--オプション設定-->
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 </body>
 </html>

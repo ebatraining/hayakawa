@@ -470,7 +470,6 @@ h2 {
 }
 
 
-
 h3 {
   display: inline-block;
   width: 100%;
@@ -533,7 +532,6 @@ h4 {
   border-bottom: 1px solid #FFF;
   padding: 1%;
 }
-
 
 /*グランドメニュー*/
 .g-menu-wrapper {
@@ -781,6 +779,7 @@ overflow: hidden;
   margin: 2% auto;
   padding: 3% auto;
   text-align: center;
+  padding-bottom: 2%;
 }
 
 .recruit-warrper h2 {
@@ -794,9 +793,10 @@ overflow: hidden;
 }
 
 .recruit-warrper p {
-  padding-bottom: 5%;
   text-align: center;
   font-size: 180%;
+  padding: 0;
+  margin: 2% 0 0 0;
 }
 
 .recruit-detail {
@@ -838,7 +838,19 @@ overflow: hidden;
   text-align: left;
 }
 
+.btn{
+    font-size: 200%;
+    text-align: center;
+}
 
+@media (min-width: 751px) {
+    a[href*="tel:"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color:#000;
+    }
+    }
 
 /*ページトップ*/
 #pagetop img{
@@ -856,8 +868,6 @@ overflow: hidden;
 #pagetop a:hover{
   opacity: 0.7;
 }
-
-
 
 /*フッター*/
 .footer {
